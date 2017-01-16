@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="Vinterchat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,234 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="VinterChatPink" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-zR-gTu">
+                                <rect key="frame" x="67" y="101" width="240" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="guille@gmail.com" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-dG-IkA">
+                                <rect key="frame" x="87" y="237" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="y0N-LJ-IIO"/>
+                                </constraints>
+                                <color key="textColor" red="0.2651461363" green="0.26515319939999998" blue="0.26514938469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pipuchi" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-AZ-KyF">
+                                <rect key="frame" x="87" y="294" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="k8H-rU-MTg"/>
+                                </constraints>
+                                <color key="textColor" red="0.2651461363" green="0.26515319939999998" blue="0.26514938469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1j-hU-MQk">
+                                <rect key="frame" x="87" y="350" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vBB-6i-ZSv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pra-iD-mkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q1j-hU-MQk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANM-zG-nyH"/>
+                            <constraint firstItem="Q1j-hU-MQk" firstAttribute="top" secondItem="u6c-AZ-KyF" secondAttribute="bottom" constant="26" id="CH2-Kb-aef"/>
+                            <constraint firstItem="Prz-zR-gTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9C-OF-7a2"/>
+                            <constraint firstItem="u6c-AZ-KyF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2J-eR-sSn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Prz-zR-gTu" secondAttribute="bottom" constant="438" id="X2l-qY-nBA"/>
+                            <constraint firstItem="G6R-dG-IkA" firstAttribute="top" secondItem="Prz-zR-gTu" secondAttribute="bottom" constant="8" id="XA8-UC-hrV"/>
+                            <constraint firstItem="u6c-AZ-KyF" firstAttribute="top" secondItem="G6R-dG-IkA" secondAttribute="bottom" constant="27" id="Zhe-iZ-6AX"/>
+                            <constraint firstItem="Prz-zR-gTu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="c7f-dg-WhO"/>
+                            <constraint firstItem="G6R-dG-IkA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="joc-Yz-V6k"/>
+                            <constraint firstItem="Prz-zR-gTu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="tzm-mR-obp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emaiTextField" destination="G6R-dG-IkA" id="uRF-0P-0Z4"/>
+                        <outlet property="passwordTextField" destination="u6c-AZ-KyF" id="RK9-cW-ryy"/>
+                        <segue destination="piQ-Ja-UtW" kind="presentation" identifier="signInSegue" id="9NM-Tk-D4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Snaps View Controller-->
+        <scene sceneID="uu5-9Q-WTZ">
+            <objects>
+                <viewController id="1lA-UM-IZo" customClass="SnapsViewController" customModule="Vinterchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3g9-0m-RRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSH-3T-gT4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xzm-zJ-tiI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.9882352941176471" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JQh-6J-x4W">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Stx-eK-76P">
+                            <color key="tintColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logoutTapped:" destination="1lA-UM-IZo" id="Kv9-vN-ALQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pdX-uh-drG">
+                            <color key="tintColor" red="0.9882352941176471" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="exz-uq-8Ef" kind="show" id="HfW-7y-U9I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIu-97-j45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="38.23088455772114"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="v22-p8-r6h">
+            <objects>
+                <viewController id="exz-uq-8Ef" customClass="PictureViewController" customModule="Vinterchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZF-0S-gcF"/>
+                        <viewControllerLayoutGuide type="bottom" id="RIF-z7-4My"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gis-B7-avp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onu-3R-7Qc">
+                                <rect key="frame" x="67" y="64" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.36078431370000003" alpha="0.40751540492957744" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Onu-3R-7Qc" secondAttribute="height" multiplier="1:1" id="kQL-LI-5SM"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8R-Bl-CXD">
+                                <rect key="frame" x="68" y="333" width="240" height="31"/>
+                                <color key="textColor" red="0.2651461363" green="0.26515319939999998" blue="0.26514938469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXI-N5-A2g">
+                                <rect key="frame" x="164" y="406" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="exz-uq-8Ef" eventType="touchUpInside" id="fQd-Na-sO5"/>
+                                </connections>
+                            </button>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Uploading..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="na8-7Y-Q1t">
+                                <rect key="frame" x="139" y="372" width="97" height="30"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="na8-7Y-Q1t" firstAttribute="width" secondItem="v8R-Bl-CXD" secondAttribute="width" id="49B-GU-rzq"/>
+                            <constraint firstItem="Onu-3R-7Qc" firstAttribute="centerX" secondItem="Gis-B7-avp" secondAttribute="centerX" id="5s5-bv-UWS"/>
+                            <constraint firstItem="Onu-3R-7Qc" firstAttribute="width" secondItem="Gis-B7-avp" secondAttribute="width" multiplier="0.65" constant="-3.75" id="Elm-Mh-v8k"/>
+                            <constraint firstItem="v8R-Bl-CXD" firstAttribute="centerX" secondItem="Gis-B7-avp" secondAttribute="centerX" id="INy-w6-dY0"/>
+                            <constraint firstItem="AXI-N5-A2g" firstAttribute="height" secondItem="v8R-Bl-CXD" secondAttribute="height" id="NGZ-ye-0wt"/>
+                            <constraint firstItem="Onu-3R-7Qc" firstAttribute="top" secondItem="BZF-0S-gcF" secondAttribute="bottom" id="Pw9-ZG-o2j"/>
+                            <constraint firstItem="AXI-N5-A2g" firstAttribute="width" secondItem="v8R-Bl-CXD" secondAttribute="width" id="ZE0-6D-W9y"/>
+                            <constraint firstItem="na8-7Y-Q1t" firstAttribute="centerX" secondItem="Gis-B7-avp" secondAttribute="centerX" id="ZYx-vm-M0T"/>
+                            <constraint firstItem="v8R-Bl-CXD" firstAttribute="width" secondItem="Onu-3R-7Qc" secondAttribute="width" id="cLz-Er-an3"/>
+                            <constraint firstItem="v8R-Bl-CXD" firstAttribute="top" secondItem="Onu-3R-7Qc" secondAttribute="bottom" constant="20" id="ff0-vA-5uU"/>
+                            <constraint firstItem="AXI-N5-A2g" firstAttribute="centerX" secondItem="Gis-B7-avp" secondAttribute="centerX" id="hNK-PZ-CAb"/>
+                            <constraint firstItem="na8-7Y-Q1t" firstAttribute="top" secondItem="v8R-Bl-CXD" secondAttribute="bottom" constant="20" id="kaV-gT-9lW"/>
+                            <constraint firstItem="AXI-N5-A2g" firstAttribute="top" secondItem="v8R-Bl-CXD" secondAttribute="bottom" constant="20" id="oV0-b9-0GY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eep-B4-jce">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ne8-BW-92L">
+                            <color key="tintColor" red="0.9882352941176471" green="0.098039215686274508" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="exz-uq-8Ef" id="NxK-oD-qUh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="v8R-Bl-CXD" id="Tqd-P0-dtL"/>
+                        <outlet property="imageView" destination="Onu-3R-7Qc" id="UF5-u9-iTO"/>
+                        <outlet property="loadingTextField" destination="na8-7Y-Q1t" id="ar8-Dv-TS3"/>
+                        <outlet property="nextButton" destination="AXI-N5-A2g" id="qhO-c3-BE7"/>
+                        <segue destination="1hz-B2-p4g" kind="show" identifier="selectUserSegue" id="Lm5-XN-FMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsN-cV-JF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="37.331334332833585"/>
+        </scene>
+        <!--Select User View Controller-->
+        <scene sceneID="9XT-6M-QDs">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1hz-B2-p4g" customClass="SelectUserViewController" customModule="Vinterchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h1C-OC-9zw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kad-9B-SHb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HS4-Hf-J9r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wrt-Fg-2Jn">
+                                <rect key="frame" x="89" y="375" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wrt-Fg-2Jn" secondAttribute="trailing" id="4Ji-Hg-vwW"/>
+                            <constraint firstItem="Kad-9B-SHb" firstAttribute="top" secondItem="wrt-Fg-2Jn" secondAttribute="bottom" id="UvP-wL-NhD"/>
+                            <constraint firstItem="wrt-Fg-2Jn" firstAttribute="leading" secondItem="HS4-Hf-J9r" secondAttribute="leading" id="Y3V-5x-na9"/>
+                            <constraint firstItem="wrt-Fg-2Jn" firstAttribute="top" secondItem="h1C-OC-9zw" secondAttribute="bottom" id="fWd-bU-PZI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="wrt-Fg-2Jn" id="ydb-ps-Tnu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NK-Zl-imH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3382" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Maw-bZ-osu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="piQ-Ja-UtW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Tea-0E-leY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.98823529409999999" green="0.098039215690000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1lA-UM-IZo" kind="relationship" relationship="rootViewController" id="D1C-fG-rb8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bb-UY-MeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VinterChatPink" width="495" height="93"/>
+    </resources>
 </document>

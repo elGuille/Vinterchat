@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C443D01E2D51DD00F4EA5C /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443CF1E2D51DD00F4EA5C /* SnapsViewController.swift */; };
+		22C443D21E2D5F3A00F4EA5C /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443D11E2D5F3A00F4EA5C /* PictureViewController.swift */; };
+		22C443D41E2D82F100F4EA5C /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */; };
 		22FCC3AD1E269CA500DD3925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */; };
-		22FCC3AF1E269CA500DD3925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC3AE1E269CA500DD3925 /* ViewController.swift */; };
+		22FCC3AF1E269CA500DD3925 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC3AE1E269CA500DD3925 /* SignInViewController.swift */; };
 		22FCC3B21E269CA500DD3925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FCC3B01E269CA500DD3925 /* Main.storyboard */; };
 		22FCC3B41E269CA500DD3925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FCC3B31E269CA500DD3925 /* Assets.xcassets */; };
 		22FCC3B71E269CA500DD3925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FCC3B51E269CA500DD3925 /* LaunchScreen.storyboard */; };
+		22FCC3BF1E26A43E00DD3925 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22FCC3BE1E26A43E00DD3925 /* GoogleService-Info.plist */; };
+		8A873E0D69145219490C614A /* Pods_Vinterchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2C788D67E3AE7284D31C5 /* Pods_Vinterchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1977B3A4C75040D7519291A8 /* Pods-Vinterchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vinterchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vinterchat/Pods-Vinterchat.release.xcconfig"; sourceTree = "<group>"; };
+		22C443CF1E2D51DD00F4EA5C /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		22C443D11E2D5F3A00F4EA5C /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		22FCC3A91E269CA500DD3925 /* Vinterchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinterchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22FCC3AE1E269CA500DD3925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22FCC3AE1E269CA500DD3925 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		22FCC3B11E269CA500DD3925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22FCC3B31E269CA500DD3925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FCC3B61E269CA500DD3925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22FCC3B81E269CA500DD3925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FCC3BE1E26A43E00DD3925 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C898922BD5CAB45DC7128C9 /* Pods-Vinterchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vinterchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vinterchat/Pods-Vinterchat.debug.xcconfig"; sourceTree = "<group>"; };
+		C1E2C788D67E3AE7284D31C5 /* Pods_Vinterchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vinterchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A873E0D69145219490C614A /* Pods_Vinterchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0F8DC0C07C9BCB3EBB63D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2C788D67E3AE7284D31C5 /* Pods_Vinterchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22FCC3A01E269CA500DD3925 = {
 			isa = PBXGroup;
 			children = (
 				22FCC3AB1E269CA500DD3925 /* Vinterchat */,
 				22FCC3AA1E269CA500DD3925 /* Products */,
+				6079FFB61008FB65E264E08A /* Pods */,
+				1A0F8DC0C07C9BCB3EBB63D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,26 @@
 			isa = PBXGroup;
 			children = (
 				22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */,
-				22FCC3AE1E269CA500DD3925 /* ViewController.swift */,
+				22FCC3AE1E269CA500DD3925 /* SignInViewController.swift */,
+				22C443CF1E2D51DD00F4EA5C /* SnapsViewController.swift */,
+				22C443D11E2D5F3A00F4EA5C /* PictureViewController.swift */,
+				22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */,
 				22FCC3B01E269CA500DD3925 /* Main.storyboard */,
 				22FCC3B31E269CA500DD3925 /* Assets.xcassets */,
 				22FCC3B51E269CA500DD3925 /* LaunchScreen.storyboard */,
 				22FCC3B81E269CA500DD3925 /* Info.plist */,
+				22FCC3BE1E26A43E00DD3925 /* GoogleService-Info.plist */,
 			);
 			path = Vinterchat;
+			sourceTree = "<group>";
+		};
+		6079FFB61008FB65E264E08A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C898922BD5CAB45DC7128C9 /* Pods-Vinterchat.debug.xcconfig */,
+				1977B3A4C75040D7519291A8 /* Pods-Vinterchat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FCC3BB1E269CA500DD3925 /* Build configuration list for PBXNativeTarget "Vinterchat" */;
 			buildPhases = (
+				55BB2805D3CDC38B8D18347F /* [CP] Check Pods Manifest.lock */,
 				22FCC3A51E269CA500DD3925 /* Sources */,
 				22FCC3A61E269CA500DD3925 /* Frameworks */,
 				22FCC3A71E269CA500DD3925 /* Resources */,
+				7212DCBCABCB23B1563BA8D3 /* [CP] Embed Pods Frameworks */,
+				514A3A4884EA319F3EA127F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FCC3B71E269CA500DD3925 /* LaunchScreen.storyboard in Resources */,
+				22FCC3BF1E26A43E00DD3925 /* GoogleService-Info.plist in Resources */,
 				22FCC3B41E269CA500DD3925 /* Assets.xcassets in Resources */,
 				22FCC3B21E269CA500DD3925 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +172,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		514A3A4884EA319F3EA127F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vinterchat/Pods-Vinterchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55BB2805D3CDC38B8D18347F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7212DCBCABCB23B1563BA8D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vinterchat/Pods-Vinterchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22FCC3A51E269CA500DD3925 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FCC3AF1E269CA500DD3925 /* ViewController.swift in Sources */,
+				22FCC3AF1E269CA500DD3925 /* SignInViewController.swift in Sources */,
+				22C443D21E2D5F3A00F4EA5C /* PictureViewController.swift in Sources */,
+				22C443D41E2D82F100F4EA5C /* SelectUserViewController.swift in Sources */,
 				22FCC3AD1E269CA500DD3925 /* AppDelegate.swift in Sources */,
+				22C443D01E2D51DD00F4EA5C /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +350,7 @@
 		};
 		22FCC3BC1E269CA500DD3925 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C898922BD5CAB45DC7128C9 /* Pods-Vinterchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TD289HG895;
@@ -272,6 +364,7 @@
 		};
 		22FCC3BD1E269CA500DD3925 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1977B3A4C75040D7519291A8 /* Pods-Vinterchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TD289HG895;
@@ -302,6 +395,7 @@
 				22FCC3BD1E269CA500DD3925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
