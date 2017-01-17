@@ -100,8 +100,8 @@
 			children = (
 				22C443D71E2E993000F4EA5C /* ViewControllers */,
 				22C443D91E2E996000F4EA5C /* Models */,
-				22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */,
 				22FCC3B01E269CA500DD3925 /* Main.storyboard */,
+				22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */,
 				22FCC3B31E269CA500DD3925 /* Assets.xcassets */,
 				22FCC3B51E269CA500DD3925 /* LaunchScreen.storyboard */,
 				22FCC3B81E269CA500DD3925 /* Info.plist */,
