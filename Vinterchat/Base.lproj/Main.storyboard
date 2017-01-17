@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -125,6 +126,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="IoC-d6-Rkh" id="REK-yM-jaa"/>
+                        <segue destination="bDS-GU-3LJ" kind="show" identifier="viewSnapSegue" id="EeA-I6-A23"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIu-97-j45" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,6 +212,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsN-cV-JF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2600.8000000000002" y="37.331334332833585"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="L4W-0P-XfN">
+            <objects>
+                <viewController id="bDS-GU-3LJ" customClass="ViewSnapViewController" customModule="Vinterchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eky-2N-c88"/>
+                        <viewControllerLayoutGuide type="bottom" id="42W-A3-gr7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DcX-AM-Hz8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Guille eating cheese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So6-IP-NT3">
+                                <rect key="frame" x="166" y="534" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b75-nj-Pa6">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b75-nj-Pa6" firstAttribute="leading" secondItem="DcX-AM-Hz8" secondAttribute="leadingMargin" id="1K6-Uk-EZx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b75-nj-Pa6" secondAttribute="trailing" id="JJy-Pc-xuW"/>
+                            <constraint firstItem="b75-nj-Pa6" firstAttribute="top" secondItem="eky-2N-c88" secondAttribute="bottom" id="L6T-pN-Zo8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="So6-IP-NT3" secondAttribute="trailing" constant="5" id="Lxn-Ni-2w9"/>
+                            <constraint firstItem="So6-IP-NT3" firstAttribute="leading" secondItem="DcX-AM-Hz8" secondAttribute="leadingMargin" constant="5" id="e3C-tZ-2a9"/>
+                            <constraint firstItem="42W-A3-gr7" firstAttribute="top" secondItem="So6-IP-NT3" secondAttribute="bottom" constant="10" id="sTU-mO-91s"/>
+                            <constraint firstItem="So6-IP-NT3" firstAttribute="top" secondItem="b75-nj-Pa6" secondAttribute="bottom" id="wJq-hI-FOW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="b75-nj-Pa6" id="u35-CY-T6r"/>
+                        <outlet property="label" destination="So6-IP-NT3" id="xwp-fZ-mF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHy-rN-Yjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="751"/>
         </scene>
         <!--Select User View Controller-->
         <scene sceneID="9XT-6M-QDs">

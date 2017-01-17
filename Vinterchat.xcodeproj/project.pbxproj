@@ -12,6 +12,7 @@
 		22C443D41E2D82F100F4EA5C /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */; };
 		22C443D61E2E98DB00F4EA5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443D51E2E98DB00F4EA5C /* User.swift */; };
 		22C443DB1E2EB29800F4EA5C /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443DA1E2EB29800F4EA5C /* Snap.swift */; };
+		22C443DD1E2EB80400F4EA5C /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C443DC1E2EB80400F4EA5C /* ViewSnapViewController.swift */; };
 		22FCC3AD1E269CA500DD3925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */; };
 		22FCC3AF1E269CA500DD3925 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC3AE1E269CA500DD3925 /* SignInViewController.swift */; };
 		22FCC3B21E269CA500DD3925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FCC3B01E269CA500DD3925 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		22C443D51E2E98DB00F4EA5C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		22C443DA1E2EB29800F4EA5C /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		22C443DC1E2EB80400F4EA5C /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		22FCC3A91E269CA500DD3925 /* Vinterchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vinterchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FCC3AC1E269CA500DD3925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FCC3AE1E269CA500DD3925 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				22C443CF1E2D51DD00F4EA5C /* SnapsViewController.swift */,
 				22C443D11E2D5F3A00F4EA5C /* PictureViewController.swift */,
 				22C443D31E2D82F100F4EA5C /* SelectUserViewController.swift */,
+				22C443DC1E2EB80400F4EA5C /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				22FCC3AF1E269CA500DD3925 /* SignInViewController.swift in Sources */,
 				22C443D21E2D5F3A00F4EA5C /* PictureViewController.swift in Sources */,
 				22C443D61E2E98DB00F4EA5C /* User.swift in Sources */,
+				22C443DD1E2EB80400F4EA5C /* ViewSnapViewController.swift in Sources */,
 				22C443D41E2D82F100F4EA5C /* SelectUserViewController.swift in Sources */,
 				22C443DB1E2EB29800F4EA5C /* Snap.swift in Sources */,
 				22FCC3AD1E269CA500DD3925 /* AppDelegate.swift in Sources */,
