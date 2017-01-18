@@ -38,6 +38,15 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         FIRDatabase.database().reference().child("users").child(FIRAuth.auth()!.currentUser!.uid).child("snaps").observe(FIRDataEventType.childRemoved, with: {(snapshot) in print(snapshot)
             
+            var index = 0
+            for snap in self.snaps {
+                if snap.key == snapshot.key {
+                    self.snaps.remove(at: index)
+                }
+                index += 1
+            }
+            
+            self.tableView.reloadData()
         })
         
     }
